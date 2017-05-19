@@ -1145,7 +1145,7 @@ return chat_list(msg)
     end
    if (matches[1]:lower() == 'join' or matches[1] == 'افزودن') and matches[2] and is_admin(msg) and matches[2] then
 	   tdcli.sendMessage(msg.to.id, msg.id, 1, 'I Invite you in '..matches[2]..'', 1, 'html')
-	   tdcli.sendMessage(matches[2], 0, 1, "Admin Joined!🌚", 1, 'html')
+	   tdcli.sendMessage(matches[2], 0, 1, "▶Admin Joined◀", 1, 'html')
     tdcli.addChatMember(matches[2], msg.from.id, 0, dl_cb, nil)
   end
 		if (matches[1] == 'rem' or matches[1] == 'حذف گروه') and matches[2] and is_admin(msg) then
@@ -1163,7 +1163,7 @@ return chat_list(msg)
 	   tdcli.sendMessage(matches[2], 0, 1, "Group has been removed by admin command", 1, 'html')
     return '_Group_ *'..matches[2]..'* _removed_'
 		end
-if matches[1] == 'beyond' or matches[1] == 'بیوند' then
+if matches[1] == 'nebron' or matches[1] == 'نبرون' then
 return tdcli.sendMessage(msg.to.id, msg.id, 1, _config.info_text, 1, 'html')
     end
 if (matches[1] == 'adminlist' or matches[1] == 'لیست ادمین') and is_admin(msg) then
@@ -1435,7 +1435,7 @@ command .. "([Aa]dminprom) (.*)$",
 command .. "([Aa]dmindem) (.*)$",
 command .. "([Ll]eave)$",
 command .. "([Aa]utoleave) (.*)$", 
-command .. "([Bb]eyond)$",
+command .. "([Nn]ebron)$",
 command .. "([Cc]reategroup) (.*)$",
 command .. "([Cc]reatesuper) (.*)$",
 command .. "([Tt]osuper)$",
@@ -1548,8 +1548,9 @@ patterns_fa = {
     "^(ارسال) +(.*) (-%d+)$",
 	"^(افزودن) (-%d+)$",
 	"^(پاک کردن حافظه)$",
-	"^(بیوند)$",
+	"^(نبرون)$",
 },
 run = run, pre_process = pre_process
 }
--- #End By @BeyondTeam
+-- #End By @NebronTM
+ 
