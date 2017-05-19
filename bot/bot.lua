@@ -83,13 +83,13 @@ function create_config( )
 	    "fun",
 	},
     sudo_users = {
-   157059515,
+   33670309,
    sudo_id
 },
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Beyond Reborn V5.0
+    info_text = [[》 Nebron V1.0
 An advanced administration bot based on https://valtman.name/telegram-cli
 
 》https://github.com/NebronTM/bot
