@@ -12,9 +12,9 @@
 
 **You can use "#", "!", or "/" to begin all commands
 
- **[▶NebronTM◀](https://telegram.me/NebronTM)
+ [▶NebronTM◀](https://telegram.me/NebronTM)
  
- #Installation
+** #Installation
 ```sh 
 cd $home
 git clone https://github.com/NebronTM/bot.git
@@ -26,10 +26,8 @@ chmod +x Nebron.sh
 
 # For Auto Launch:
 
-```sh
 chmod 777 autobd.sh
 killall screen
 screen ./autobd.sh
 
-* * *
  
