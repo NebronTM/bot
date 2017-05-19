@@ -15,14 +15,12 @@
 * * *
 
 # Installation
+ 
 
-```sh
-# Let's install the bot.
-cd $HOME
 git clone https://github.com/NebronTM/bot.git
 cd bot
-chmod +x NebronTM.sh
-./NebronTM.sh install
+chmod +x Nebron.sh
+./Nebron.sh install
 ./Nebron.sh 
 # Enter a phone number & confirmation code.
 
