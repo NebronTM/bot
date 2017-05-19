@@ -14,14 +14,14 @@
 
  [▶NebronTM◀](https://telegram.me/NebronTM)
  
-** #Installation
+**Installation
 ```sh 
 cd $home
 git clone https://github.com/NebronTM/bot.git
 cd bot
-chmod +x Nebron.sh
-./Nebron.sh install
-./Nebron.sh 
+chmod +x NebronTM.sh
+./NebronTM.sh install
+./NebronTM.sh 
 # Enter a phone number & confirmation code.
 
 # For Auto Launch:
