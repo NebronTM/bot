@@ -1,4 +1,4 @@
---Begin msg_checks.lua By @SoLiD
+--Begin msg_checks.lua By @MR_Me_Ir
 local TIME_CHECK = 2
 
 local function pre_process(msg)
