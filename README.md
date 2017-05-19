@@ -12,16 +12,16 @@
 
 **You can use "#", "!", or "/" to begin all commands
 
-* * *
-
-# Installation
+ 
+ #Installation
  
-
+cd $home
 git clone https://github.com/NebronTM/bot.git
 cd bot
 chmod +x Nebron.sh
 ./Nebron.sh install
 ./Nebron.sh 
+
 # Enter a phone number & confirmation code.
 
 # For Auto Launch:
@@ -30,13 +30,4 @@ killall screen
 screen ./autobd.sh
 
 * * *
-
-## Enter a phone number & confirmation code.
-
-# For Auto Launch:
-chmod 777 autobd.sh
-screen ./autobd.sh
-```
-
-* * *
-  
+ 
