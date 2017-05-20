@@ -3903,7 +3903,7 @@ if not lang then
 if (matches[1]:lower() == "help" or matches[1] == 'راهنما') and is_mod(msg) then
 if not lang then
 text = [[
-*Beyond Bot Commands:*
+* Bot Commands:*
 *!setmanager* `[username|id|reply]` 
 _Add User To Group Admins(CreatorBot)_
 *!Remmanager* `[username|id|reply]` 
@@ -4018,7 +4018,7 @@ _Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
 elseif lang then
 
 text = [[
-*دستورات ربات بیوند:*
+*دستورات ربات :*
 *ادمین گروه* `[username|id|reply]` 
 _افزودن ادمین گروه(درصورت اینکه ربات سازنده  گروه)_
 *حذف ادمین گروه* `[username|id|reply]` 
