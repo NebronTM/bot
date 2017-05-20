@@ -83,7 +83,7 @@ function create_config( )
 	    "fun",
 	},
     sudo_users = {
-   33670309,
+   373670309,
    sudo_id
 },
     admins = {},
@@ -140,7 +140,7 @@ function load_plugins()
 			print('\27[31m'..err..'\27[39m')
 		end
 	end
-	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting BDReborn Robot...\n')
+	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting Nebron Robot...\n')
 end
 
 function msg_valid(msg)
