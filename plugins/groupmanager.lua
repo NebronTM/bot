@@ -12,9 +12,9 @@ end
     local data = load_data(_config.moderation.data)
   if data[tostring(msg.to.id)] then
 if not lang then
-   return '_Group is already added_'
+   return '◼_Group is already added_◼'
 else
-return 'گروه در لیست گروه های مدیریتی ربات هم اکنون موجود است'
+return '◼گروه در لیست گروه های مدیریتی ربات هم اکنون موجود است◼'
   end
 end
         -- create data array in moderation.json
@@ -64,9 +64,9 @@ end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
     if not lang then
-  return '*Group has been added*'
+  return '✔*Group has been added*✔'
 else
-  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
+  return '✔گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد✔'
 end
 end
 
@@ -76,18 +76,18 @@ local lang = redis:get(hash)
     -- superuser and admins only (because sudo are always has privilege)
       if not is_admin(msg) then
      if not lang then
-        return '_You are not bot admin_'
+        return '◻_You are not bot admin_◻'
    else
-        return 'شما مدیر ربات نمیباشید'
+        return '◻شما مدیر ربات نمیباشید◻'
     end
    end
     local data = load_data(_config.moderation.data)
     local receiver = msg.to.id
   if not data[tostring(msg.to.id)] then
   if not lang then
-    return '_Group is not added_'
+    return '◻_Group is not added_◻'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return '◻گروه به لیست گروه های مدیریتی ربات اضافه نشده است◻'
    end
   end
 
@@ -100,9 +100,9 @@ else
       end data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
  if not lang then
-  return '*Group has been removed*'
+  return '❌*Group has been removed*❌'
  else
-  return 'گروه با موفیت از لیست گروه های مدیریتی ربات حذف شد'
+  return '❌گروه با موفیت از لیست گروه های مدیریتی ربات حذف شد❌'
 end
 end
 
@@ -176,7 +176,7 @@ end
    data[tostring(msg.to.id)]['filterlist'][(word)] = true
      save_data(_config.moderation.data, data)
    if not lang then
-         return "_Word_ *"..word.."* _added to filtered words list_"
+         return "_Word_ *"..word.."* ✔_added to filtered words list_✔"
             else
          return "_کلمه_ *"..word.."* _به لیست کلمات فیلتر شده اضافه شد_"
     end
@@ -194,7 +194,7 @@ local lang = redis:get(hash)
       data[tostring(msg.to.id)]['filterlist'][(word)] = nil
        save_data(_config.moderation.data, data)
        if not lang then
-         return "_Word_ *"..word.."* _removed from filtered words list_"
+         return "_Word_ *"..word.."* ❌_removed from filtered words list_❌"
        elseif lang then
          return "_کلمه_ *"..word.."* _از لیست کلمات فیلتر شده حذف شد_"
      end
@@ -214,15 +214,15 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return "_Group is not added_"
+    return "◻_Group is not added_◻"
  else
-    return "گروه به لیست گروه های مدیریتی ربات اضافه نشده است"
+    return "◻گروه به لیست گروه های مدیریتی ربات اضافه نشده است◻"
   end
  end
   -- determine if table is empty
   if next(data[tostring(msg.to.id)]['mods']) == nil then --fix way
   if not lang then
-    return "_No_ *moderator* _in this group_"
+    return "👥_No_ *moderator* _in this group_👥"
 else
    return "در حال حاضر هیچ مدیری برای گروه انتخاب نشده است"
   end
@@ -247,7 +247,7 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.to.id)] then
 if not lang then
-    return "_Group is not added_"
+    return "◻_Group is not added_◻"
 else
 return "گروه به لیست گروه های مدیریتی ربات اضافه نشده است"
   end
