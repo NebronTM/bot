@@ -1,5 +1,6 @@
 
-**An advanced and powerful administration bot based on NEW TG-CLI
+[![https://t.me/NebronTM](https://img.shields.io/badge/💬%20Telegram-NebronTM-00aced.svg)](https://t.me/NebronTm)
+
 
 
 * * *
